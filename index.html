@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GreenVines</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="icon" href="./favicon.svg" />
+
+    <!-- 
+    -  css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - google font link
+  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - preload images
+  -->
+
+    <link rel="preload" as="image" href="./assets/images/new-clean-1.jpg" />
+    <link rel="preload" as="image" href="./assets/images/new-clean-2.jpg" />
+    <link rel="preload" as="image" href="./assets/images/new-clean-3.jpg" />
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header">
+      <div class="header-top" data-header>
+        <div class="container">
+          <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
+          </button>
+
+          <div class="input-wrapper">
+            <input
+              type="search"
+              name="search"
+              placeholder="搜尋商品"
+              class="search-field"
+            />
+
+            <button class="search-submit" aria-label="search">
+              <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <a href="#" class="logo">
+            <img src="./assets/images/mta.jpg" width="179" height="20" />
+          </a>
+
+          <div class="header-actions">
+            <button class="header-action-btn" aria-label="user">
+              <ion-icon
+                name="person-outline"
+                aria-hidden="true"
+                aria-hidden="true"
+              ></ion-icon>
+            </button>
+
+            <button class="header-action-btn" aria-label="favourite item">
+              <ion-icon
+                name="star-outline"
+                aria-hidden="true"
+                aria-hidden="true"
+              ></ion-icon>
+
+              <span class="btn-badge">0</span>
+            </button>
+
+            <button class="header-action-btn" aria-label="cart item">
+              <data class="btn-text" value="0">$0.00</data>
+
+              <ion-icon
+                name="bag-handle-outline"
+                aria-hidden="true"
+                aria-hidden="true"
+              ></ion-icon>
+
+              <span class="btn-badge">0</span>
+            </button>
+          </div>
+
+          <nav class="navbar">
+            <ul class="navbar-list">
+              <li>
+                <a href="#new" class="navbar-link has-after">最新提案</a>
+              </li>
+
+              <li>
+                <a href="#guide" class="navbar-link has-after">保養指南</a>
+              </li>
+
+              <li>
+                <a href="#products" class="navbar-link has-after">所有產品</a>
+              </li>
+
+              <li>
+                <a href="#clean" class="navbar-link has-after">純淨保養</a>
+              </li>
+
+              <li>
+                <a href="#about" class="navbar-link has-after">關於我們</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- 
+    - #MOBILE NAVBAR
+  -->
+
+    <div class="sidebar">
+      <div class="mobile-navbar" data-navbar>
+        <div class="wrapper">
+          <a href="#" class="logo">
+            <img src="./assets/images/mta.jpg" width="179" height="26" />
+          </a>
+
+          <button
+            class="nav-close-btn"
+            aria-label="close menu"
+            data-nav-toggler
+          >
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+          <li>
+            <a href="#new" class="navbar-link" data-nav-link>最新提案</a>
+          </li>
+
+          <li>
+            <a href="#guide" class="navbar-link" data-nav-link>保養指南</a>
+          </li>
+
+          <li>
+            <a href="#products" class="navbar-link" data-nav-link>所有產品</a>
+          </li>
+
+          <li>
+            <a href="#clean" class="navbar-link" data-nav-link>純淨保養</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>關於我們</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+    </div>
+
+    <main>
+      <article>
+        <!-- 
+        - #new
+      -->
+
+        <section class="section new" id="new" aria-label="new" data-section>
+          <div class="container">
+            <ul class="has-scrollbar">
+              <li class="scrollbar-item">
+                <div
+                  class="new-card has-bg-image"
+                  style="background-image: url('./assets/images/banner-01.jpg')"
+                ></div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div
+                  class="new-card has-bg-image"
+                  style="background-image: url('./assets/images/banner-02.jpg')"
+                ></div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div
+                  class="new-card has-bg-image"
+                  style="background-image: url('./assets/images/banner-03.jpg')"
+                ></div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #Guide
+      -->
+
+        <section
+          class="section guide"
+          id="guide"
+          aria-label="guide"
+          data-section
+        >
+          <div class="container">
+            <ul class="guide-list">
+              <li>
+                <div class="guide-card has-before hover:shine">
+                  <h2 class="h2 card-title">精選保養指南</h2>
+
+                  <p class="card-text">純淨保養（Clean Beauty）</p>
+
+                  <a href="#" class="btn-link">
+                    <span class="span">頭皮護理與清潔指南</span>
+
+                    <ion-icon
+                      name="arrow-forward"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+
+                  <div
+                    class="has-bg-image"
+                    style="background-image: url('./assets/images/care01.jpeg')"
+                  ></div>
+                </div>
+              </li>
+
+              <li>
+                <div class="guide-card has-before hover:shine">
+                  <h2 class="h2 card-title" style="color: white">
+                    純淨生活部落格
+                  </h2>
+
+                  <p class="card-text" style="color: white">深入永續生活</p>
+
+                  <a href="#" class="btn-link">
+                    <span class="span" style="color: white">臉部肌膚知識</span>
+
+                    <ion-icon
+                      name="arrow-forward"
+                      aria-hidden="true"
+                      style="color: white"
+                    ></ion-icon>
+                  </a>
+
+                  <div
+                    class="has-bg-image"
+                    style="background-image: url('./assets/images/care04.jpg')"
+                  ></div>
+                </div>
+              </li>
+
+              <li>
+                <div class="guide-card has-before hover:shine">
+                  <h2 class="h2 card-title">了解非必要程序</h2>
+
+                  <p class="card-text">你是否真的需要？</p>
+
+                  <a href="#" class="btn-link">
+                    <span class="span">無乳液實驗</span>
+
+                    <ion-icon
+                      name="arrow-forward"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+
+                  <div
+                    class="has-bg-image"
+                    style="background-image: url('./assets/images/care05.jpg')"
+                  ></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #products
+      -->
+
+        <section
+          class="section products"
+          id="products"
+          aria-label="products"
+          data-section
+        >
+          <div class="container">
+            <div class="title-wrapper">
+              <h2 class="h2 section-title">綠藤的純淨代表作</h2>
+            </div>
+
+            <ul class="has-scrollbar">
+              <li class="scrollbar-item">
+                <div class="products-card">
+                  <div
+                    class="card-clean img-holder"
+                    style="--width: 540; --height: 720"
+                  >
+                    <img
+                      src="./assets/images/洗髮.jpg"
+                      width="540"
+                      height="720"
+                      loading="lazy"
+                      class="img-cover"
+                    />
+
+                    <span class="badge" aria-label="20% off">-20%</span>
+
+                    <div class="card-actions">
+                      <button class="action-btn" aria-label="add to cart">
+                        <ion-icon
+                          name="bag-handle-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="add to whishlist">
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="compare">
+                        <ion-icon
+                          name="repeat-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <div class="price">
+                      <del class="del">$600</del>
+
+                      <span class="span">$480</span>
+                    </div>
+
+                    <h3>
+                      <a href="#" class="card-title">頭皮淨化洗髮精</a>
+                    </h3>
+
+                    <div class="card-rating">
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <p class="rating-text">5170 reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="products-card">
+                  <div
+                    class="card-clean img-holder"
+                    style="--width: 540; --height: 720"
+                  >
+                    <img
+                      src="./assets/images/活萃三日.jpg"
+                      width="540"
+                      height="720"
+                      loading="lazy"
+                      class="img-cover"
+                    />
+
+                    <div class="card-actions">
+                      <button class="action-btn" aria-label="add to cart">
+                        <ion-icon
+                          name="bag-handle-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="add to whishlist">
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="compare">
+                        <ion-icon
+                          name="repeat-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <div class="price">
+                      <span class="span">$1000</span>
+                    </div>
+
+                    <h3>
+                      <a href="#" class="card-title">活萃三日修護精華</a>
+                    </h3>
+
+                    <div class="card-rating">
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <p class="rating-text">5170 reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="products-card">
+                  <div
+                    class="card-clean img-holder"
+                    style="--width: 540; --height: 720"
+                  >
+                    <img
+                      src="./assets/images/綠色海洋.jpg"
+                      width="540"
+                      height="720"
+                      loading="lazy"
+                      class="img-cover"
+                    />
+
+                    <div class="card-actions">
+                      <button class="action-btn" aria-label="add to cart">
+                        <ion-icon
+                          name="bag-handle-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="add to whishlist">
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="compare">
+                        <ion-icon
+                          name="repeat-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <div class="price">
+                      <span class="span">$2000</span>
+                    </div>
+
+                    <h3>
+                      <a href="#" class="card-title">綠色海洋精華油</a>
+                    </h3>
+
+                    <div class="card-rating">
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <p class="rating-text">5170 reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="products-card">
+                  <div
+                    class="card-clean img-holder"
+                    style="--width: 540; --height: 720"
+                  >
+                    <img
+                      src="./assets/images/辣木油.jpg"
+                      width="540"
+                      height="720"
+                      loading="lazy"
+                      class="img-cover"
+                    />
+
+                    <div class="card-actions">
+                      <button class="action-btn" aria-label="add to cart">
+                        <ion-icon
+                          name="bag-handle-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="add to whishlist">
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="compare">
+                        <ion-icon
+                          name="repeat-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <div class="price">
+                      <span class="span">$1000</span>
+                    </div>
+
+                    <h3>
+                      <a href="#" class="card-title">奇蹟辣木油</a>
+                    </h3>
+
+                    <div class="card-rating">
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <p class="rating-text">5170 reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section
+          class="section products"
+          id="products"
+          aria-label="products"
+          data-section
+        >
+          <div class="container">
+            <div class="title-wrapper">
+              <h2 class="h2 section-title">優惠組合</h2>
+            </div>
+
+            <ul class="has-scrollbar">
+              <li class="scrollbar-item">
+                <div class="products-card">
+                  <div
+                    class="card-clean img-holder"
+                    style="--width: 540; --height: 720"
+                  >
+                    <img
+                      src="./assets/images/combo.webp"
+                      width="540"
+                      height="720"
+                      loading="lazy"
+                      class="img-cover"
+                    />
+
+                    <span class="badge" aria-label="20% off">熟客最愛</span>
+
+                    <div class="card-actions">
+                      <button class="action-btn" aria-label="add to cart">
+                        <ion-icon
+                          name="bag-handle-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="add to whishlist">
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="compare">
+                        <ion-icon
+                          name="repeat-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <div class="price">
+                      <del class="del">$2500</del>
+
+                      <span class="span">$1500</span>
+                    </div>
+
+                    <h3>
+                      <a href="#" class="card-title">無酸煥膚保濕組</a>
+                    </h3>
+
+                    <div class="card-rating">
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <p class="rating-text">5170 reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="scrollbar-item">
+                <div class="products-card">
+                  <div
+                    class="card-clean img-holder"
+                    style="--width: 540; --height: 720"
+                  >
+                    <img
+                      src="./assets/images/combo.webp"
+                      width="540"
+                      height="720"
+                      loading="lazy"
+                      class="img-cover"
+                    />
+
+                    <span class="badge" aria-label="20% off">熟客最愛</span>
+
+                    <div class="card-actions">
+                      <button class="action-btn" aria-label="add to cart">
+                        <ion-icon
+                          name="bag-handle-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="add to whishlist">
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="compare">
+                        <ion-icon
+                          name="repeat-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <div class="price">
+                      <del class="del">$2500</del>
+
+                      <span class="span">$1500</span>
+                    </div>
+
+                    <h3>
+                      <a href="#" class="card-title">無酸煥膚保濕組</a>
+                    </h3>
+
+                    <div class="card-rating">
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <p class="rating-text">5170 reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="scrollbar-item">
+                <div class="products-card">
+                  <div
+                    class="card-clean img-holder"
+                    style="--width: 540; --height: 720"
+                  >
+                    <img
+                      src="./assets/images/combo.webp"
+                      width="540"
+                      height="720"
+                      loading="lazy"
+                      class="img-cover"
+                    />
+
+                    <span class="badge" aria-label="20% off">熟客最愛</span>
+
+                    <div class="card-actions">
+                      <button class="action-btn" aria-label="add to cart">
+                        <ion-icon
+                          name="bag-handle-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="add to whishlist">
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="compare">
+                        <ion-icon
+                          name="repeat-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <div class="price">
+                      <del class="del">$2500</del>
+
+                      <span class="span">$1500</span>
+                    </div>
+
+                    <h3>
+                      <a href="#" class="card-title">無酸煥膚保濕組</a>
+                    </h3>
+
+                    <div class="card-rating">
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <p class="rating-text">5170 reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="scrollbar-item">
+                <div class="products-card">
+                  <div
+                    class="card-clean img-holder"
+                    style="--width: 540; --height: 720"
+                  >
+                    <img
+                      src="./assets/images/combo.webp"
+                      width="540"
+                      height="720"
+                      loading="lazy"
+                      class="img-cover"
+                    />
+
+                    <span class="badge" aria-label="20% off">熟客最愛</span>
+
+                    <div class="card-actions">
+                      <button class="action-btn" aria-label="add to cart">
+                        <ion-icon
+                          name="bag-handle-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="add to whishlist">
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="compare">
+                        <ion-icon
+                          name="repeat-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <div class="price">
+                      <del class="del">$2500</del>
+
+                      <span class="span">$1500</span>
+                    </div>
+
+                    <h3>
+                      <a href="#" class="card-title">無酸煥膚保濕組</a>
+                    </h3>
+
+                    <div class="card-rating">
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <p class="rating-text">5170 reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="scrollbar-item">
+                <div class="products-card">
+                  <div
+                    class="card-clean img-holder"
+                    style="--width: 540; --height: 720"
+                  >
+                    <img
+                      src="./assets/images/combo.webp"
+                      width="540"
+                      height="720"
+                      loading="lazy"
+                      class="img-cover"
+                    />
+
+                    <span class="badge" aria-label="20% off">熟客最愛</span>
+
+                    <div class="card-actions">
+                      <button class="action-btn" aria-label="add to cart">
+                        <ion-icon
+                          name="bag-handle-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="add to whishlist">
+                        <ion-icon
+                          name="star-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+
+                      <button class="action-btn" aria-label="compare">
+                        <ion-icon
+                          name="repeat-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="card-content">
+                    <div class="price">
+                      <del class="del">$2500</del>
+
+                      <span class="span">$1500</span>
+                    </div>
+
+                    <h3>
+                      <a href="#" class="card-title">無酸煥膚保濕組</a>
+                    </h3>
+
+                    <div class="card-rating">
+                      <div class="rating-wrapper" aria-label="5 start rating">
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                        <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      </div>
+
+                      <p class="rating-text">5170 reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #clean
+      -->
+
+        <section
+          class="section clean"
+          aria-label="clean"
+          data-section
+          id="clean"
+        >
+          <div class="container">
+            <ul class="clean-list">
+              <li>
+                <div class="clean-card clean-card-1 has-before hover:shine">
+                  <p class="card-subtitle">深入減法的</p>
+
+                  <h2 class="h2 card-title">純淨保養</h2>
+
+                  <a href="#" class="btn btn-secondary">了解更多</a>
+
+                  <div
+                    class="has-bg-image"
+                    style="
+                      background-image: url('./assets/images/banner-1.jpg');
+                    "
+                  ></div>
+                </div>
+              </li>
+
+              <li>
+                <div class="clean-card clean-card-2 has-before hover:shine">
+                  <h2 class="h2 card-title">減法，<br />會不會才是解答？</h2>
+
+                  <p class="card-text">
+                    綠藤之所以存在，是希望將每日保養，轉化成永續肌膚與環境的可能，<br />
+                    把保養的深度解答，重新還到你的手上。
+                  </p>
+
+                  <a href="#" class="btn btn-secondary">認識「無乳液實驗」</a>
+
+                  <div
+                    class="has-bg-image"
+                    style="background-image: url('./assets/images/300.jfif')"
+                  ></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #FEATURE
+      -->
+
+        <section class="section feature" aria-label="feature" data-section>
+          <div class="container">
+            <h2 class="h2-large section-title">
+              現在，保養從減法開始<mark>二減一加</mark>
+            </h2>
+
+            <ul class="flex-list">
+              <li class="flex-item">
+                <div class="feature-card">
+                  <img
+                    src="./assets/images/減號.jpg"
+                    width="204"
+                    height="236"
+                    loading="lazy"
+                    class="card-icon"
+                  />
+
+                  <h3 class="h3 card-title">減去非必要程序</h3>
+
+                  <p class="card-text">
+                    跟保養成分一樣重要的，是你如何選擇你的保養程序。從一水一油開始，重構保養的最短路徑。
+                  </p>
+                </div>
+              </li>
+              <li class="flex-item">
+                <div class="feature-card">
+                  <img
+                    src="./assets/images/減號.jpg"
+                    width="204"
+                    height="236"
+                    loading="lazy"
+                    class="card-icon"
+                  />
+
+                  <h3 class="h3 card-title">減去非必要成分</h3>
+
+                  <p class="card-text">
+                    從一份對肌膚與永續的在意，我們捨棄了 2900+
+                    個非必要成分，所以你所接觸，都更加純淨。
+                  </p>
+                </div>
+              </li>
+
+              <li class="flex-item">
+                <div class="feature-card">
+                  <img
+                    src="./assets/images/加號1.jpg!qt324new_nowater"
+                    width="204"
+                    height="236"
+                    loading="lazy"
+                    class="card-icon"
+                  />
+
+                  <h3 class="h3 card-title">加上必要的透明</h3>
+
+                  <p class="card-text">
+                    當擁有更多透明，就擁有更好的選擇。從成分、配方、瓶器、到真實期待等
+                    7 大項，我們透明。
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #BLOG
+      -->
+
+        <section class="section blog" id="about" aria-label="blog" data-section>
+          <div class="container">
+            <h2 class="h2-large section-title">關於更多的綠藤</h2>
+
+            <ul class="flex-list">
+              <li class="flex-item">
+                <div class="blog-card">
+                  <figure
+                    class="card-clean img-holder has-before hover:shine"
+                    style="--width: 700; --height: 450"
+                  >
+                    <img
+                      src="./assets/images/門市.jpg"
+                      width="700"
+                      height="450"
+                      loading="lazy"
+                      alt="Find a Store"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">哪裡有實體店鋪？</a>
+                  </h3>
+
+                  <a href="#" class="btn-link">
+                    <span class="span">門市一覽</span>
+
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+                </div>
+              </li>
+
+              <li class="flex-item">
+                <div class="blog-card">
+                  <figure
+                    class="card-clean img-holder has-before hover:shine"
+                    style="--width: 700; --height: 450"
+                  >
+                    <img
+                      src="./assets/images/blog-2.jpg"
+                      width="700"
+                      height="450"
+                      loading="lazy"
+                      alt="From Our Blog"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">臉部肌膚知識部落格</a>
+                  </h3>
+
+                  <a href="#" class="btn-link">
+                    <span class="span">更多文章</span>
+
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+                </div>
+              </li>
+
+              <li class="flex-item">
+                <div class="blog-card">
+                  <figure
+                    class="card-clean img-holder has-before hover:shine"
+                    style="--width: 700; --height: 450"
+                  >
+                    <img
+                      src="./assets/images/about.jpg"
+                      width="700"
+                      height="450"
+                      loading="lazy"
+                      alt="Our Story"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">我們的故事</a>
+                  </h3>
+
+                  <a href="#" class="btn-link">
+                    <span class="span">去看看</span>
+
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer" data-section>
+      <div class="container">
+        <div class="footer-top">
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">
+                <span style="font-size: 3rem">綠藤生機</span>
+                GreenVines
+              </p>
+            </li>
+
+            <li>
+              <p class="footer-list-text">info@greenvines.com.tw</p>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">深入了解</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">品牌故事 </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">純淨保養主張 </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">2900+ 非必要成份清單 </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">公益報告書</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">客戶服務</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">會員權益 </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">常見問答 </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">銷售據點 </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">購物須知</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">聯絡我們</a>
+            </li>
+          </ul>
+
+          <div class="footer-list">
+            <p class="newsletter-title">訂閱電子報！</p>
+
+            <p class="newsletter-text">會寄酷酷的東西給你@@</p>
+
+            <form action="" class="newsletter-form">
+              <input
+                type="email"
+                name="email_address"
+                placeholder="輸入你的 email ~"
+                required
+                class="email-field"
+              />
+
+              <button type="submit" class="btn btn-primary">訂閱</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="wrapper">
+            <p class="copyright">&copy; 2023 sangy</p>
+
+            <ul class="social-list">
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <img
+            src="./assets/images/pay.png"
+            width="313"
+            height="28"
+            alt="available all payment method"
+            class="w-100"
+          />
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a
+      href="#top"
+      class="back-top-btn"
+      aria-label="back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+    </a>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js" defer></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
